@@ -27,6 +27,7 @@
               <th>Revocation</th>
               <th>Serial</th>
               <th>Details</th>
+              <th>Revoke</th>
               <th></th>
             </tr>
             </thead>
@@ -53,6 +54,7 @@
                     <span class="label label-warning">CN: {{ .Details.CN }}</span>
                     <span class="label label-warning">Email: {{ .Details.Email }}</span>
                   </td>
+                <td>{{ .Serial }}</td>
               </tr>
               {{ end }}
             {{end}}
